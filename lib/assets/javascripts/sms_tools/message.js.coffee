@@ -24,7 +24,7 @@ class SmsTools.Message
     '\\': true
 
   asciiPattern: /^[\x00-\x7F]*$/
-  gsmEncodingPattern: /^[0-9a-zA-Z@Δ¡¿£_!Φ"¥Γ#èΛ¤éΩ%ùΠ&ìΨòΣçΘΞ:Ø;ÄäøÆ,<Ööæ=ÑñÅß>ÜüåÉ§à€~ \$\.\-\+\(\)\*\\\/\?\|\^\}\{\[\]\'\r\n]*$/
+  gsmEncodingPattern: /^[0-9a-zA-Z@Δ¡¿£_!Φ"¥Γ#èΛ¤éΩ%ùΠ&ìΨòΣÇΘΞ:Ø;ÄäøÆ,<Ööæ=ÑñÅß>ÜüåÉ§à€~ \$\.\-\+\(\)\*\\\/\?\|\^\}\{\[\]\'\r\n]*$/
 
   constructor: (@text) ->
     @text                   = @text.replace /\r\n?/g, "\n"
